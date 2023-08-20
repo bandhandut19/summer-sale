@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,26 +8,127 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
     <header>
-        <section id="banner-section">
-            <div class="">
-                <div>
-                    <h1>---SALE FEVER---</h1>
-                    <P>Purchase TK 200 or <br> above & get <span>20% off</span></P>
-                    <div id="discount-offer-btn">
-                        <h1>Use Promo Code</h1>
-                        <button id="discount-offer-btn">SELL200</button>
+        <section id="banner-section" class="flex justify-center items-center lg:p-24 p-5 text-center bg-[#F9F6E2]">
+            <div class="flex text-center lg:flex-row flex-col gap-2 lg:gap-8">
+                <div class="flex flex-col justify-center lg:p-10 p-1">
+                    <h1 class="font-bold">---SALE FEVER---</h1>
+                    <P class="text-4xl lg:text-5xl font-extrabold mt-8 mb-14">Purchase TK 200 or <br> above & get <span
+                            class="text-[#E527B2]">20% off</span></P>
+                    <div id="discount-offer-btn" class="flex-col lg:flex-row flex gap-5 justify-center items-center">
+                        <h1 class="font-bold">Use Promo Code</h1>
+                        <button id="discount-offer-btn"
+                            class="bg-[#E527B2] p-2 px-4 rounded-lg text-white">SELL200</button>
                     </div>
                 </div>
-                <div id="banner-img-container">
-                    <img src="./images/Summer 1.png" alt="Summer-Sale-Offer_Banner-Image">
+                <div id="banner-img-container" class="flex justify-center items-center">
+                    <img class="lg:w-[400px] lg:h-[400px]" src="./images/Summer 1.png"
+                        alt="Summer-Sale-Offer_Banner-Image">
                 </div>
             </div>
         </section>
+        <!-- border-4 border-cyan-600 -->
     </header>
     <main>
+        <section id="cards-container" class=" bg-slate-100">
+            <div class="container flex gap-10 pt-16 w-4/5 mx-auto">
+                <div id="products-one" class=" w-9/12 mb-20">
+                    <h1 class="font-extrabold mb-5 text-2xl">Kitchenware</h1>
 
+                    <div class="products-list grid grid-cols-3 gap-8">
+                        <div class="card bg-base-100 shadow-xl">
+                            <figure class="p-10  bg-slate-200 m-2 rounded-xl">
+                                <img src="./images/prod1.png" alt="Shoes" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
+                                        checked />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                </div>
+                                <h2 class="card-title">K. Accessories</h2>
+                                <p><span>50.00</span>TK</p>
+                            </div>
+                        </div>
+
+
+                        <div class="card bg-base-100 shadow-xl">
+                            <figure class="p-10 bg-slate-200 m-2 rounded-xl">
+                                <img src="./images/prod1.png" alt="Shoes" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
+                                        checked />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                </div>
+                                <h2 class="card-title">K. Accessories</h2>
+                                <p><span>50.00</span>TK</p>
+                            </div>
+                        </div>
+
+
+                        <div class="card bg-base-100 shadow-xl">
+                            <figure class="p-10 bg-slate-200 m-2 rounded-xl">
+                                <img src="./images/prod1.png" alt="Shoes" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
+                                        checked />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                </div>
+                                <h2 class="card-title">K. Accessories</h2>
+                                <p><span>50.00</span>TK</p>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+
+                <div id="cart" class="pt-14 relative text-center">
+                    <div class="coupon-apply bg-white p-3 mb-5 rounded-lg text-left">
+                        <h1>Have coupon</h1>
+                        <input class="p-2 w-[150px] px-2 rounded-lg border-2 border-slate-300" type="text" id="coupon" placeholder="Coupon code">
+                        <button id="coupon-apply-btn"
+                            class="bg-slate-500 p-2 px-3 rounded-lg text-white" disabled >Apply</button>
+                            <!-- bg-[#E527B2] -->
+                    </div>
+                    <div id="cart-list" class="bg-white p-3 rounded-lg text-left">
+                        <ol class="list-decimal list-inside" id="customer-products-list">
+                            <li class="font-bold">hella</li>
+                            <li class="font-bold">hella</li>
+                            <li class="font-bold">hella</li>
+                            <li class="font-bold">hella</li>
+                        </ol>
+                        <hr class="mt-2 mb-2">
+                        <ul id="customer-price">
+                            <li class="font-bold">Total price: <span class="opacity-60"> <span id="total-price" >0.00</span> TK</span> </li>
+                            <li class="font-bold">Discount: <span class="opacity-60"> <span id="discount-amount" >0.00</span> TK</span>
+                            <li class="font-bold">Total: <span class="opacity-60"> <span id="total-payable-amount" >0.00</span> TK</span>
+                        </ul>
+                        <hr class="mt-2 mb-5">
+                    </div>
+                    <button id="coupon-apply-btn"
+                        class="bg-slate-500 p-2 px-10 -mx-24 -my-5 absolute rounded-lg text-white">Make Purchase</button>
+                </div>
+
+            </div>
+        </section>
     </main>
     <footer>
 
@@ -34,4 +136,5 @@
 
     <script src="./js/logic.js"></script>
 </body>
+
 </html>
