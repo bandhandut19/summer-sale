@@ -19,8 +19,8 @@ for (const card of cards) {
         const totalPriceField = document.getElementById('total-price')
 
         totalPrice += productPrice
-        totalField.innerText =totalPrice
-        totalPriceField.innerText = totalPrice
+        totalField.innerText =totalPrice.toFixed(2)
+        totalPriceField.innerText = totalPrice.toFixed(2)
 
         if (totalPrice != 0) {
             purchase.removeAttribute('disabled')
@@ -57,8 +57,8 @@ applyBtn.addEventListener('click',function(){
         // 20% off
         discount = (20/100)*totalPrice
         total = totalPrice - discount
-        discountField.innerText = discount
-        totalField.innerText =total
+        discountField.innerText = discount.toFixed(2)
+        totalField.innerText =total.toFixed(2)
         coupon.value ="";
     }
     else{
