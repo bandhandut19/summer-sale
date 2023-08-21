@@ -41,7 +41,6 @@ for (const card of cards) {
         `;
         cartList.appendChild(newListItemName)
 
-
     })
 }
 
@@ -55,6 +54,7 @@ applyBtn.addEventListener('click',function(){
     let couponCode= coupon.value
 
     if(couponCode === "SELL200"){
+        // 20% off
         discount = (20/100)*totalPrice
         total = totalPrice - discount
         discountField.innerText = discount
